@@ -1,18 +1,18 @@
 use std::fs::File;
-use std::io::ErrorKind;
+use std::io::{Error, ErrorKind, Read};
 
 fn main() {
     metexpect();
 }
-fn metexpect(){
+
+fn metexpect() {
     let path = "history.json";
     let f = File::open(path).expect("ERROR OPENING FILE");//unwrap ile ayni islemi yapmaktadir fakat farki burada bir mesaj verebiliriz
 }
 
-fn metunwrap(){
+fn metunwrap() {
     let path = "history.json";
     let f = File::open(path).unwrap();//match ile yaptigimiz hata yakalama islemini daha hazili ve kolay yolla yapilmaktadir.
-
 }
 
 fn hwresult() {
