@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::ErrorKind;
 
 fn main() {
-    hwresult();
+    metexpect();
 }
 fn metexpect(){
     let path = "history.json";
